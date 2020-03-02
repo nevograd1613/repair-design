@@ -12,5 +12,5 @@ gulp.task('browser-sync', function () {
          baseDir: "./"
       }
    });
-   gulp.watch("/*.html").on('change', browserSync.reload);
+   gulp.watch("./*.html").on('change', browserSync.reload);
 });
