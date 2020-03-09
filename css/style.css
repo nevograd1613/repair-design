@@ -355,6 +355,12 @@ body {
   .button:hover {
     cursor: pointer; }
   .button--primary {
+    font-family: 'Futura Demi', cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
     background-color: #E3B873;
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -362,6 +368,12 @@ body {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
+    font-family: 'Futura Demi', cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
@@ -382,11 +394,20 @@ body {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Futura Demi', cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; }
 
 .nav__item {
   text-decoration: none;
   color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   margin-right: 40px;
   transition: color 0.2s; }
@@ -397,6 +418,14 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
+  font-family: 'Futura Demi', cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
   margin-right: 45px; }
 
 .hero {
@@ -420,11 +449,21 @@ body {
     position: relative;
     max-width: 670px; }
   .hero__text {
+    font-family: 'Futura Book', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
     font-size: 22px;
     max-width: 500px; }
   .hero__button {
     margin-right: 20px; }
   .hero__scroll-down {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 138.6%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -458,6 +497,10 @@ body {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    font-family: 'Futura Demi', cursive;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
     display: flex;
     align-items: center;
     text-transform: uppercase;
