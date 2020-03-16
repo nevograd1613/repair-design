@@ -369,13 +369,14 @@ body {
   margin: auto; }
 
 .button {
-  padding: 0.9285rem 1.4285rem;
+  padding: 11px 24px;
   border: none;
-  border-radius: 0.1428rem;
+  border-radius: 2px;
   text-transform: uppercase; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
+    padding: 20px 26px;
     font-family: 'Futura Demi', cursive;
     font-style: italic;
     font-weight: 500;
@@ -392,6 +393,7 @@ body {
     font-family: 'Futura Demi', cursive;
     font-style: italic;
     font-weight: 500;
+    padding: 18px 42px;
     font-size: 0.9285rem;
     line-height: 1.0714rem;
     text-align: center;
@@ -419,7 +421,7 @@ body {
   font-family: 'Futura Demi', cursive;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.02rem;
   line-height: 1.1428rem; }
 
 .nav__item {
@@ -440,12 +442,15 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.1428rem;
+  line-height: 1.5rem;
   text-align: right;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
-  margin-right: 3.2142rem;
+  margin-right: 3rem;
   color: #E3B873; }
+
+.contacts__button {
+  padding: 12px 21px; }
 
 .hero {
   background: #131313 url("../img/image-1.jpg") no-repeat center/cover;
@@ -468,15 +473,18 @@ body {
     position: relative;
     max-width: 47.85714rem;
     margin-left: 4.28rem; }
+  .hero__title {
+    margin-bottom: 1rem; }
   .hero__text {
     font-family: 'Futura Book', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5714rem;
-    line-height: 2.1428rem;
-    max-width: 35.714rem; }
+    line-height: 131%;
+    max-width: 35.714rem;
+    margin-bottom: 3rem; }
   .hero__button {
-    margin-right: 1.4285rem; }
+    margin-right: 1.3rem; }
   .hero__scroll-down {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -517,7 +525,7 @@ body {
   background-color: #131313; }
   .instagram__link {
     font-family: 'Futura Demi', cursive;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.1428rem;
     text-align: center;
     display: flex;
@@ -538,7 +546,7 @@ body {
   margin: 0;
   font-style: normal;
   font-weight: normal;
-  line-height: 3.7857rem;
+  line-height: 1.3;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.8571rem; }
