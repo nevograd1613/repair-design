@@ -1,10 +1,25 @@
 @media screen and ( max-width: 1200px )
     html
         font-size: 12px
+    .col
+        flex-basis: 50%
     .nav
         &__item
             margin-right: 1rem
 @media screen and ( max-width: 992px  )
+    .row
+        display: block
+    .card
+        &__text
+            margin: 0
+            margin-top: -9.3rem
+            margin-bottom: 5.714rem
+    .repair
+        background-color: $light
+    .design-project
+        background: linear-gradient(to top, $dark 50%, $dark 50%)
+    .design-project__heading
+        color: $light           
     .nav
         display: none
     .hero
@@ -13,16 +28,21 @@
         &__content
             margin-left: 0
 @media screen and ( max-width: 576px )
+    body
+        background-color: $dark
     .contacts
         &__phone
             text-decoration: none
             margin-right: 0
             color: $light
+            font-size: 0.857rem
         &__button
             display: none  
     .title
-        font-size: 1.64rem
+        font-size: 0.857rem
     .hero
+        &__title
+            font-size: 1.642rem
         &__scroll-down
             display: none
         &__content
@@ -31,9 +51,13 @@
             font-size: 1.29rem
             margin-bottom: 2.28rem
         &__button
+            font-size: 0.92rem
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    
+    .card
+        text-align: left
 @media screen and ( max-height: 550px )
     .hero
         &__scroll-down
