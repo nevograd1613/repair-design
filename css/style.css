@@ -618,7 +618,8 @@ body {
 .row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around; }
+  justify-content: space-between;
+  padding: 0px 7.142rem; }
 
 .col {
   flex-basis: 32%; }
@@ -743,11 +744,19 @@ body {
     text-align: center;
     text-transform: uppercase; }
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1525px) {
+  .row {
+    padding: 0px 3.5rem; } }
+
+@media screen and (max-width: 1285px) {
+  .row {
+    padding: 0px 1rem; }
   .nav__item {
     margin-right: 0.9rem; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1210px) {
+  .row {
+    padding: 0px 0.5rem; }
   html {
     font-size: 12px; }
   .col {
