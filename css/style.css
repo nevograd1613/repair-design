@@ -618,7 +618,7 @@ body {
 .row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .col {
   flex-basis: 32%; }
@@ -753,7 +753,7 @@ body {
   .col {
     flex-basis: 50%; } }
 
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 1192px) {
   .row {
     display: flex;
     flex-direction: column;
