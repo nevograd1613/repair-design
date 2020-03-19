@@ -764,6 +764,22 @@ body {
 @media screen and (max-width: 576px) {
   body {
     background-color: #131313; }
+  .button {
+    padding: 19px 70px;
+    padding: 19px 70px; }
+  .modal__dialog {
+    max-width: 22.142rem; }
+  .modal__title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem; }
+  .modal__input {
+    margin-bottom: 2rem; }
+  .modal__button {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 18px 35px; }
+  .input {
+    font-size: 1.1rem; }
   .contacts__phone {
     text-decoration: none;
     margin-right: 0;
@@ -789,9 +805,6 @@ body {
     margin-bottom: 1.85rem; }
   .card {
     text-align: left; }
-  .button {
-    padding: 19px 70px;
-    padding: 19px 70px; }
   .video__heading {
     color: #fff; } }
 
