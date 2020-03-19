@@ -358,8 +358,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
-  .section-title__heading {
-    margin: 0; }
   .section-title__design {
     padding: 0px 0px 0px 0px; }
   .section-title__image {
@@ -666,6 +664,12 @@ body {
 .repair {
   margin-bottom: 2.5rem; }
 
+.repairs {
+  margin-bottom: 2.5rem; }
+
+.control {
+  margin-bottom: 2.5rem; }
+
 .design-project {
   width: 100%;
   height: 100%;
@@ -738,25 +742,35 @@ body {
     text-align: center;
     text-transform: uppercase; }
 
+@media screen and (max-width: 1265px) {
+  .nav__item {
+    margin-right: 0.9rem; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .col {
-    flex-basis: 50%; }
-  .nav__item {
-    margin-right: 1rem; } }
+    flex-basis: 50%; } }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1185px) {
   .row {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .section-title {
+    padding: 60px 0; }
+    .section-title__design {
+      padding: 60px 0px 0px 0px; }
   .design-project {
     background: linear-gradient(to top, #131313 50%, #131313 50%); }
   .repair {
     background-color: #fff; }
   .design-project__heading {
-    color: #fff; } }
+    color: #fff; }
+  .card__text {
+    margin: 0 auto;
+    margin-top: -9.3rem;
+    margin-bottom: 5.714rem; } }
 
 @media screen and (max-width: 992px) {
   .card__image {
