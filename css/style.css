@@ -352,9 +352,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 5px; }
+  padding: 1px 14px; }
 
 .section-title {
+  padding: 60px 0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive; }
@@ -665,7 +666,7 @@ body {
   margin-bottom: 2.5rem; }
 
 .repairs {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 9rem; }
 
 .control {
   margin-bottom: 2.5rem; }
