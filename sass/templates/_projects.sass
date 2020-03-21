@@ -1,0 +1,60 @@
+.swiper-container-horizontal>.swiper-pagination-bullets
+    width: auto
+    bottom: -2px
+.swiper
+    &-slide
+        margin-top: 0
+        display: flex
+        flex-wrap: wrap
+        &:last-of-type
+            margin-top: 6.5rem
+        &__text
+            flex-basis: 36%
+            margin-bottom: 0.4rem
+        &__value
+            font-family: 'Futura Book', sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 1.07rem
+            line-height: 1.428rem
+        &__heading
+            margin-top: 2.214rem
+            font-size: 1.285rem
+            font-style: normal
+            font-weight: normal
+            line-height: 1.78rem
+            color: $primary
+            font-family: 'Yeseva One', cursive
+            text-transform: uppercase
+            margin-bottom: 0.5rem
+    &-pagination
+        &-bullets
+            width: auto
+        &-bullet
+            background-color: rgba($light, 0.3)
+            &-active
+                background-color: $light
+    &-button
+        &-prev
+            bottom: 0
+            top: auto
+            background: url('../img/arrow-prev.svg') no-repeat center
+            background-size: 42px
+            width: 42px
+            height: 14px
+            left: 0
+            &::after
+                display: none
+        &-next
+            bottom: 0
+            top: auto
+            background-color: $dark
+            background: url('../img/arrow-next.svg') no-repeat center
+            background-size: 42px
+            width: 42px
+            height: 14px
+            &::after
+                display: none
+.swiper-scrollbar
+    background: none
+    align-items: flex-end

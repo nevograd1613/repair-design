@@ -17,7 +17,10 @@ body
     font-weight: normal
     margin-bottom: 2.785rem
     margin-top: 1.714rem
-.section    
+.section
+    &--dark
+        background-color: $dark
+        color: $light   
     &__subtitle
         display: flex
         align-items: center
@@ -28,6 +31,34 @@ body
         text-align: center
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
+        &__text
+            font-size: 1.28rem
+            line-height: 2.07rem
+            font-family: 'Futura Book', sans-serif
+            font-style: normal
+            font-weight: normal
+            max-width: 31.57rem
+            text-transform: none
+        &--left
+            padding: 0
+            text-align: left
+        &__heading
+            &--primary
+                margin: 0
+                margin-bottom: 23px
+                color: $primary
+                line-height: 138.6%
+                font-size: 1.928rem
+                letter-spacing: -0.07em
+        &__word
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                width: 92px
+                height: 1px
+                background-color: $primary
+                margin-left: 2.3rem
         &__design
             padding: 0px 0px 0px 0px
         &__image
