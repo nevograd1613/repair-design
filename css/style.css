@@ -898,7 +898,11 @@ body {
   .card__text {
     margin: 0 auto;
     margin-top: -9.3rem;
-    margin-bottom: 5.714rem; } }
+    margin-bottom: 5.714rem; }
+  .col__img {
+    margin-top: 2rem;
+    max-weight: 340px;
+    max-height: 201px; } }
 
 @media screen and (max-width: 992px) {
   .card__image {
