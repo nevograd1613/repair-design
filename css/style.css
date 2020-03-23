@@ -862,8 +862,7 @@ body {
     display: none; }
 
 .swiper-scrollbar {
-  background: none;
-  align-items: flex-end; }
+  background: none; }
 
 @media screen and (max-width: 1525px) {
   .row {
