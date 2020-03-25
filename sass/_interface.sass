@@ -47,6 +47,9 @@
     font-family: 'Futura Medium', sans-serif
     color: $light
     padding: 0.2rem 0
+    &-dark
+        &::placeholder
+            color: #363636
     &__light
         &::placeholder
             color: $light
@@ -73,3 +76,5 @@
             border: 1px solid $primary
             border-radius: 1px
             margin-right: 0.64rem
+        &--center
+            justify-content: center

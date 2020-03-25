@@ -40,4 +40,91 @@ $(document).ready(function() {
   next.css('left', prev.width() + 10 + bullets.width() + 10)
   bullets.css('left', prev.width() + 10)
   new WOW().init();
+  $('.control__form').validate({
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле email",
+        email: "Введите корректный email"
+      }
+    }
+  });
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('.footer__form').validate({
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле email",
+        email: "Введите корректный email"
+      }
+    }
+  });
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('.modal__form').validate({
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле email",
+        email: "Введите корректный email"
+      }
+    }
+  });
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 });

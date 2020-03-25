@@ -20,6 +20,9 @@
     .section    
         &-title
             padding: 60px 0
+            &__repair
+                padding: 0
+                padding-bottom: 2rem
             &__design
                 padding: 60px 0px 0px 0px
     .design-project
@@ -37,6 +40,9 @@
         margin-top: 2rem
         max-weight: 340px
         max-height: 202px
+    .control
+        &__title
+            padding: 2.5rem
 @media screen and ( max-width: 992px  )
     .card
         &__image
@@ -54,54 +60,81 @@
             margin-left: 0
     .section-title__heading--primary
         font-size: 1.57rem
-    .section
-        &-title
-            &__text
-                font-size: 1rem
-            &__word
-                &::after
-                    width: 0
-                    height: 0
-                    background-color: $primary
-                    margin-left: 0
-    .section-dark
-        padding-bottom: 0
-    .section-title--left
-        padding: 0
-        text-align: left
-        max-width: 21.785rem
-    .row--p
-        align-items: flex-start
-        padding: 0
-    .col-50
-        max-width: 100%
-    .img
-        max-width: 300px
-    .swiper
-        &-slide
-            padding-bottom: 2rem
-            &-next
-                left: -3rem
-                padding-bottom: 0
-                padding-left: 5rem
-            &-prev
-                left: -3rem
-                padding-bottom: 0
-            &__heading
-                margin-top: 0
-                font-size: 1rem
-                background-image: 138.6%
-            &__value
-                font-size: 1rem
-                line-height: 158.48%
 @media screen and ( max-width: 576px )
     body
         background-color: $dark
+    .label--dark
+        color: rgba(255, 255, 255, 0.5)
+    .input
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+        &-dark
+            &::placeholder
+                color: $light
+    .repairs
+        background-color: $light
+        padding-top: 4.14rem
+    .clients
+        display: none
+    .design-project-two
+        display: none
+    .policy__label--center-footer
+        justify-content: start
+    .control
+        &__policy
+            order: 1
+            &-label
+                padding-bottom: 4.428rem
+                color: $light
+                justify-content: flex-start
+        &__button
+            order: 2
+            margin-bottom: -4.5rem
+        &__form
+            flex-direction: column
+        &__input
+            color: $light
+            &-group
+                margin-bottom: 4.37rem
+                color: rgba(255, 255, 255, 0.5)
+                &-last
+                    margin-bottom: 0
+        &__text
+            color: $light
+            font-size: 1rem
+            line-height: 169.8%
+            &::before
+                margin-bottom: 1.57rem
+        &__video
+            width: 325px
+            height: 207px
+            min-height: 0
+            margin-bottom: 2rem
     .button
         &--primary
         padding: 19px 70px
         &--outline
         padding: 19px 70px
+    .footer
+        display: flex
+        flex-direction: column
+        background: none
+        padding-top: 0
+        &__map
+            order: 1
+        &__heading
+            max-width: 90%
+            font-size: 1.285rem
+            line-height: 138.6%
+            order: 2
+        &__social
+            order: 3
+        &__button
+            padding: 1.357rem 8.571rem
+        &__wrap
+            margin-top: 0
+            background-color: $dark
+        &__menu
+            display: none
     .modal
         &__dialog
             max-width: 22.142rem
@@ -145,6 +178,46 @@
         text-align: left
     .video__heading
         color: $light
+    .section
+        &-title
+            &__text
+                font-size: 1rem
+            &__word
+                &::after
+                    width: 0
+                    height: 0
+                    background-color: $primary
+                    margin-left: 0
+    .section-dark
+        padding-bottom: 0
+    .section-title--left
+        padding: 0
+        text-align: left
+        max-width: 21.785rem
+    .row--p
+        align-items: flex-start
+        padding: 0
+    .col-50
+        max-width: 100%
+    .img
+        max-width: 300px
+    .swiper
+        &-slide
+            padding-bottom: 2rem
+            &-next
+                left: -3rem
+                padding-bottom: 0
+                padding-left: 5rem
+            &-prev
+                left: -3rem
+                padding-bottom: 0
+            &__heading
+                margin-top: 0
+                font-size: 1rem
+                background-image: 138.6%
+            &__value
+                font-size: 1rem
+                line-height: 158.48%
 @media screen and ( max-height: 550px )
     .hero
         &__scroll-down
