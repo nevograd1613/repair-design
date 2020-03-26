@@ -16,28 +16,25 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+    $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'gfdetuhc96115@gmail.com';                     // SMTP username
-    $mail->Password   = 'dA9260914561';                               // SMTP password
+    $mail->Username   = 'golubev.d.a@mail.ru';                     // SMTP username
+    $mail->Password   = 'Da9260914561';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('gfdetuhc96115@gmail.com');
-    $mail->addAddress('golubev.d.a@mail.ru');     // Add a recipient
+    $mail->setFrom('golubev.d.a@mail.ru');
+    $mail->addAddress('gfdetuhc96115@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}";
 
-if ($mail->send()) {
-    echo "ок";
-} else {
-    echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}"
-}
-
+    $mail->send();
+    header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
+?>

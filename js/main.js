@@ -13,6 +13,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 */
+$(document).ready(function(){
+ 
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+   
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
+   
+  });
 $(document).ready(function() {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -41,6 +57,13 @@ $(document).ready(function() {
   bullets.css('left', prev.width() + 10)
   new WOW().init();
   $('.control__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -49,6 +72,7 @@ $(document).ready(function() {
         maxlength: 15
       },
       userPhone: "required",
+      policyСheckbox: "required",
       // compound rule
       userEmail: {
         required: true,
@@ -62,6 +86,7 @@ $(document).ready(function() {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Заполните поле",
+      policyСheckbox: "Заполните поле",
       userEmail: {
         required: "Заполните поле email",
         email: "Введите корректный email"
@@ -74,7 +99,9 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена');
+          swal({
+            text: "Форма отправлена!",
+          });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -83,6 +110,13 @@ $(document).ready(function() {
   });
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
   $('.footer__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -91,6 +125,7 @@ $(document).ready(function() {
         maxlength: 15
       },
       userPhone: "required",
+      policyСheckbox: "required",
       // compound rule
       userEmail: {
         required: true,
@@ -104,6 +139,7 @@ $(document).ready(function() {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Заполните поле",
+      policyСheckbox: "Заполните поле",
       userEmail: {
         required: "Заполните поле email",
         email: "Введите корректный email"
@@ -116,7 +152,9 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена');
+          swal({
+            text: "Форма отправлена!",
+          });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -125,6 +163,13 @@ $(document).ready(function() {
   });
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
   $('.modal__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -133,6 +178,7 @@ $(document).ready(function() {
         maxlength: 15
       },
       userPhone: "required",
+      policyСheckbox: "required",
       // compound rule
       userEmail: {
         required: true,
@@ -146,6 +192,7 @@ $(document).ready(function() {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Заполните поле",
+      policyСheckbox: "Заполните поле",
       userEmail: {
         required: "Заполните поле email",
         email: "Введите корректный email"
@@ -158,7 +205,9 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена');
+          swal({
+            text: "Форма отправлена!",
+          });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -166,4 +215,18 @@ $(document).ready(function() {
     }
   });
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  //var player;
+  //$('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    //player = new YT.Player('player', {
+      //height: '360',
+      //width: '100%',
+      //videoId: 'YkM1-k2Q83Q',
+      //events: {
+        //'onReady': videoPlay,
+     // }
+    //});
+ // })
+ // function videoPlay(event) {
+  //  event.target.videoPlay();
+ // }
 });

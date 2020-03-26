@@ -408,6 +408,17 @@ body {
       background-color: #E3B873;
       margin: 0 0.71428rem; }
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/icon_top.png") no-repeat; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -482,16 +493,20 @@ body {
   line-height: 1.785rem;
   font-family: 'Futura Medium', sans-serif;
   padding: 0.2rem 0; }
-  .input-dark::-webkit-input-placeholder {
-    color: #363636; }
-  .input-dark::-moz-placeholder {
-    color: #363636; }
-  .input-dark:-ms-input-placeholder {
-    color: #363636; }
-  .input-dark::-ms-input-placeholder {
-    color: #363636; }
-  .input-dark::placeholder {
-    color: #363636; }
+  .input-dark {
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.285rem;
+    line-height: 1.714rem; }
+    .input-dark::-webkit-input-placeholder {
+      color: #363636; }
+    .input-dark::-moz-placeholder {
+      color: #363636; }
+    .input-dark:-ms-input-placeholder {
+      color: #363636; }
+    .input-dark::-ms-input-placeholder {
+      color: #363636; }
+    .input-dark::placeholder {
+      color: #363636; }
   .input__light {
     color: #fff; }
     .input__light::-webkit-input-placeholder {
@@ -1142,8 +1157,8 @@ body {
     .control__text::before {
       margin-bottom: 1.57rem; }
   .control__video {
-    width: 325px;
-    height: 207px;
+    max-width: 325px;
+    max-height: 207px;
     min-height: 0;
     margin-bottom: 2rem; }
   .button {
@@ -1264,6 +1279,6 @@ body {
   .hero__scroll-down {
     display: none; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .card__image {
     max-width: 300px; } }
