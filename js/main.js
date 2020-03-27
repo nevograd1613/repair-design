@@ -1,18 +1,3 @@
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-  const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-  const closeBtn = document.querySelector('.modal__close');
-  const switchModal = () => {
-      modal.classList.toggle('modal--visible');
-  }
-  modalBtn.forEach(element => {
-      element.addEventListener('click', switchModal);
-  });  
-  closeBtn.addEventListener('click', switchModal);
-});
-
-*/
 $(document).ready(function(){
  
   $(window).scroll(function(){
@@ -113,7 +98,8 @@ $(document).ready(function() {
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
           swal({
-            text: "Форма отправлена!",
+            title: "Отправил форму",
+            button: "Хорошо",
           });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
@@ -166,7 +152,8 @@ $(document).ready(function() {
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
           swal({
-            text: "Форма отправлена!",
+            title: "Отправил форму",
+            button: "Хорошо",
           });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
@@ -219,7 +206,8 @@ $(document).ready(function() {
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
           swal({
-            text: "Форма отправлена!",
+            title: "Отправил форму",
+            button: "Хорошо",
           });
           $(form)[0].reset();
           modal.removeClass('modal--visible');
@@ -228,20 +216,7 @@ $(document).ready(function() {
     }
   });
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
-  //var player;
-  //$('.video__play').on('click', function onYouTubeIframeAPIReady() {
-    //player = new YT.Player('player', {
-      //height: '360',
-      //width: '100%',
-      //videoId: 'YkM1-k2Q83Q',
-      //events: {
-        //'onReady': videoPlay,
-     // }
-    //});
- // })
- // function videoPlay(event) {
-  //  event.target.videoPlay();
- // }
+ 
  ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [47.244729, 39.723187],

@@ -1,18 +1,3 @@
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-  const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-  const closeBtn = document.querySelector('.modal__close');
-  const switchModal = () => {
-      modal.classList.toggle('modal--visible');
-  }
-  modalBtn.forEach(element => {
-      element.addEventListener('click', switchModal);
-  });  
-  closeBtn.addEventListener('click', switchModal);
-});
-
-*/
 $(document).ready(function(){
  
   $(window).scroll(function(){
@@ -112,9 +97,10 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          swal({
-            text: "Форма отправлена!",
-          });
+          swal ( " Форма отправлена! " , { 
+            className : " black-bg " , 
+            dangerMode : true ,
+          } ) ;
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -165,9 +151,10 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          swal({
-            text: "Форма отправлена!",
-          });
+          swal ( " Форма отправлена! " , { 
+            className : " black-bg " , 
+            dangerMode : true ,
+          } ) ;
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -218,9 +205,10 @@ $(document).ready(function() {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          swal({
-            text: "Форма отправлена!",
-          });
+          swal ( " Форма отправлена! " , { 
+            className : " black-bg " , 
+            dangerMode : true ,
+          } ) ;
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         }
@@ -228,20 +216,12 @@ $(document).ready(function() {
     }
   });
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
-  //var player;
-  //$('.video__play').on('click', function onYouTubeIframeAPIReady() {
-    //player = new YT.Player('player', {
-      //height: '360',
-      //width: '100%',
-      //videoId: 'YkM1-k2Q83Q',
-      //events: {
-        //'onReady': videoPlay,
-     // }
-    //});
- // })
- // function videoPlay(event) {
-  //  event.target.videoPlay();
- // }
+ setTimeout(function(){
+	var elem = document.createElement('script');
+	elem.type = 'text/javascript';
+	elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
+	document.getElementsByTagName('body')[0].appendChild(elem);
+}, 2000);
  ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [47.244729, 39.723187],
