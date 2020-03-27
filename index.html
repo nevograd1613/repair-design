@@ -54,7 +54,7 @@ Repair Disign Project
                <button class="button hero__button button--outline" data-toggle="modal">Отправить заявку</button>
             </div>
          </div>
-         <a href="#" class="hero__scroll-down">листайте вниз</a>
+         <a href="#project" class="hero__scroll-down">листайте вниз</a>
       </section>
       <!-- hero-->
       <section class="section-dark">
@@ -407,8 +407,8 @@ Repair Disign Project
             Ростов на дону, Торговый центр Plaza Прямой телефон <a href="tel:+7999768329" class="phone-numb">+7 (999) 768-32-99</a>
          </div>
          <div class="footer__social">
-            <img src="img/mail.svg" alt="" class="footer__social-img">
-            <img src="img/instagram.svg" alt="">
+            <a href="mailto:gfdetuhc96115@gmail.com"><img src="img/mail.svg" alt="" class="footer__social-img"></a>
+            <a href="https://www.instagram.com/?hl=ru"><img src="img/instagram.svg" alt=""></a>
          </div>
          <div class="footer__map" id="map">
          </div>
@@ -471,7 +471,48 @@ Repair Disign Project
    <script src="js/jquery.validate.min.js"></script>
    <script src="js/jquery.mask.min.js"></script>
    <script src="js/jquery.fancybox.min.js"></script>
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=b6304e51-4d92-4ac6-b6f0-3c8d23e70eee&lang=ru_RU"></script>
+   <script>
+      function createMap () {
+  var myMap = new ymaps.Map('map', {
+          center: [47.244729, 39.723187],
+          zoom: 15
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Собственный значок метки',
+          balloonContent: 'Это красивая метка'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: '../img/marker.png',
+          // Размеры метки.
+          iconImageSize: [32, 32],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      });
+      myMap.behaviors.disable('scrollZoom')
+  myMap.geoObjects
+      .add(myPlacemark);
+      var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+
+};
+   </script>
    <script src="js/main.js"></script>
 </body>
 </html>
