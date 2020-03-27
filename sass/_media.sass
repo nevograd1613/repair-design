@@ -1,9 +1,9 @@
 @media screen and ( max-width: 1525px )
     .row
-        padding: 0px 3.5rem
+        padding: 0px 3rem
 @media screen and ( max-width: 1285px )
    .row
-       padding: 0px 1rem
+       padding: 0px 0.5rem
    .nav
         &__item
             margin-right: 0.9rem 
@@ -12,7 +12,47 @@
         padding: 0px 0.5rem
     html
         font-size: 12px
+    .card__image
+        max-weight: 29.78rem
+        max-height: 28rem
+        min-height: 19rem
 @media screen and ( max-width: 1192px  )
+    .section
+        &-dark
+            display: none    
+        &-title
+            padding: 60px 0
+            &__repair
+                padding: 0
+                padding-bottom: 2rem
+            &__design
+                padding: 60px 0px 0px 0px
+            &--left
+                padding: 0
+                padding-top: 2rem
+    .design-project
+        background: linear-gradient(to top, $dark 50%, $dark 50%)
+    .repair
+        background-color: $light
+    .design-project__heading
+        color: $light
+    .card
+        &__text
+            margin: 0 auto
+            margin-top: -9.3rem
+            margin-bottom: 5.714rem
+    .col__img
+        margin-top: 2rem
+        max-weight: 29.78rem
+        max-height: 31.57rem
+    .card__image
+        max-weight: 29.78rem
+        max-height: 28rem
+        min-height: 19rem
+    .control
+        &__title
+            padding: 2.5rem
+@media screen and ( max-width: 992px  )
     .row
         display: flex
         flex-direction: column
@@ -32,6 +72,8 @@
     .design-project__heading
         color: $light
     .card
+        &__image
+            max-width: 320px
         &__text
             margin: 0 auto
             margin-top: -9.3rem
@@ -42,15 +84,11 @@
         max-height: 202px
     .control
         &__title
-            padding: 2.5rem
-@media screen and ( max-width: 992px  )
-    .card
-        &__image
-            max-width: 320px
-        &__text
-            margin: 0
-            margin-top: -9.3rem
-            margin-bottom: 5.714rem          
+            padding: 2.5rem     
+    .button
+        &--primary
+            &:hover
+                box-shadow: 0px 5px 15px rgba($primary, 0.2)          
     .nav
         display: none
     .hero
@@ -126,6 +164,7 @@
             display: flex
             flex-direction: column
         &__map
+            height: 255px
             max-width: 100%
             margin-bottom: 3rem
             order: 1
@@ -231,6 +270,9 @@
             &__value
                 font-size: 1rem
                 line-height: 158.48%
+    #map
+        min-height: 255px
+        min-width: 340px
 @media screen and ( max-height: 550px )
     .hero
         &__scroll-down

@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -13,6 +13,7 @@
    <title>Турецкий ремонт</title>
 </head>
 <body>
+   <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61396033, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61396033" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
    <header class="header">
       <div class="container">
          <div class="menu">
@@ -29,7 +30,7 @@ Repair Disign Project
             </nav>
             <div class="contacts menu__contacts">
                <a href="tel:+7999768329" class="phone contacts__phone">+7 (999) 768-32-99</a>
-               <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+               <button class="button contacts__button button--primary" data-toggle="modal" onclick="ym(93448651, 'reachGoal', 'button'); return true;">Заказать звонок</button>
             </div>
          </div>
          <!-- menu-->
@@ -54,17 +55,19 @@ Repair Disign Project
          <a href="#" class="hero__scroll-down">листайте вниз</a>
       </section>
       <!-- hero-->
-      <section class="section-dark"></section>
-      <section class="section section--dark projects" id="project">
-         <div class="container">
-            <div class="row row--p">
-               <div class="col-50 col__text">
-                  <div class="section-title section-title--left">
-                     <h2 class="section-title__heading--primary">
+      <section class="section-dark">
+         <h6 class="need-heading">1</h6>
+      </section>
+         <section class="section section--dark projects" id="project">
+            <div class="container">
+               <div class="row row--p">
+                  <div class="col-50 col__text">
+                     <div class="section-title section-title--left">
+                        <h2 class="section-title__heading--primary">
                         Завершенные <span class="section-title__word">проекты</span>
-                     </h2>
-                     <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
-                  </div>
+                        </h2>
+                        <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
+                     </div>
                   <!-- Slider main container -->
                   <div class="swiper-container">
                      <!-- Additional required wrapper -->
@@ -145,21 +148,22 @@ Repair Disign Project
                      <div class="swiper-wrapper swiper-no-swiping">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                           <img src="img/image 2.1.jpg" alt="" class="col__img">
+                           <img src="img/image_2.1.jpg" alt="" class="col__img">
                         </div>
                         <div class="swiper-slide">
-                           <img src="img/image 2.1.jpg" alt="" class="col__img">
+                           <img src="img/image_2.1.jpg" alt="" class="col__img">
                         </div>
                         <div class="swiper-slide">
-                           <img src="img/image 2.1.jpg" alt="" class="col__img">
+                           <img src="img/image_2.1.jpg" alt="" class="col__img">
                         </div>
                      </div>
                   </div>
                </div>
                <!-- /.col-50 -->
             <!-- /.row -->
-         </div>
-      </section>
+               </div>
+            </div>
+         </section>
       <section class="section control video__heading" id="control">
          <div class="container">
             <div class="section-title control__title">
@@ -349,7 +353,9 @@ Repair Disign Project
             </div>
          </div>
       </section>
-      <section class="section design-project-two"></section>
+      <section class="section design-project-two">
+         <h6 class="need-heading">1</h6>
+      </section>
       <section class="section clients">
          <div class="conteiner">
             <div class="section-title section-title__design types__section-title">
@@ -360,6 +366,7 @@ Repair Disign Project
                   <img src="img/clients.svg" alt="">
                </div>
             </div>
+         </div>
       </section>
       <!-- /.section section__clients -->
    </main>
@@ -376,7 +383,7 @@ Repair Disign Project
                <!-- /.input-group footer__input-group -->
                <div class="input-group footer__input-group">
                   <label for="user--phone" class="label form__label label--light">Телефон</label>
-                  <input type="tel" name="userPhone"class="input form__input footer__input input__light" id="user--phone" placeholder="Ваш номер телефона:">
+                  <input type="tel" name="userPhone" class="input form__input footer__input input__light" id="user--phone" placeholder="Ваш номер телефона:">
                </div>
                <!-- /.input-group footer__input-group -->
                <div class="input-group footer__input-group footer__input-group--full-width">
@@ -395,14 +402,13 @@ Repair Disign Project
       </div>
       <div class="container footer__container">
          <div class="footer__heading">
-            Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99
+            Ростов на дону, Торговый центр Plaza Прямой телефон <a href="tel:+7999768329" class="phone-numb">+7 (999) 768-32-99</a>
          </div>
          <div class="footer__social">
             <img src="img/mail.svg" alt="" class="footer__social-img">
             <img src="img/instagram.svg" alt="">
          </div>
-         <div class="footer__map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1761fd9276a0e94b0e3fa84b189479914ff9e2e689db18a4799e0f03ddd713de&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=falce"></script>
+         <div class="footer__map" id="map">
          </div>
       </div>
          <div class="footer__menu">
@@ -412,12 +418,12 @@ Repair Disign Project
       Repair Disign Project
                   </div>
                   <nav class="nav menu__nav">
-                     <a href="#" class="nav__item">Главная</a>
-                     <a href="#" class="nav__item">Проекты</a>
-                     <a href="#" class="nav__item">Замер</a>
-                     <a href="#" class="nav__item">Команда</a>
-                     <a href="#" class="nav__item">Отзывы</a>
-                     <a href="#" class="nav__item">Контакты</a>
+                     <a href="#homes" class="nav__item">Главная</a>
+                     <a href="#project" class="nav__item">Проекты</a>
+                     <a href="#control" class="nav__item">Замер</a>
+                     <a href="#repairs" class="nav__item">Команда</a>
+                     <a href="#design" class="nav__item">Отзывы</a>
+                     <a href="#footer" class="nav__item">Контакты</a>
                   </nav>
                   <div class="contacts menu__contacts">
                      <a href="tel:+7999768329" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -427,14 +433,14 @@ Repair Disign Project
             </div>
          </div>
    </footer>
-   <!-- /.footer section section--dark -->
+   <!-- /.footer section section-dark -->
    <div class="modal">
       <div class="modal__dialog">
          <button class="modal__close"></button>
          <h3 class="modal__title">
                Оставьте заявку и наш менеджер свяжется с вами
          </h3>
-         <form action="send.php" method="POST" class="form modal__form">
+         <form action="send.php" method="POST" class="form modal__form" id="modal_id">
             <div class="input-group modal__input-group">
                <label for="user---name" class="label form__label label--light">Имя</label>
                <input type="text" name="userName" class="input form__input modal__input input__light" id="user---name" placeholder="Как вас зовут:">
@@ -455,10 +461,6 @@ Repair Disign Project
          </form>
       </div>
    </div>
-   <div class="modalmod">
-      <div class="modalmod-displ">Заявка отправлена</div>
-      <button class="modal__close"></button>
-   </div>
    <a href="#" class="scrollup">Наверх</a>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -467,6 +469,7 @@ Repair Disign Project
    <script src="js/jquery.validate.min.js"></script>
    <script src="js/jquery.mask.min.js"></script>
    <script src="js/jquery.fancybox.min.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=b6304e51-4d92-4ac6-b6f0-3c8d23e70eee&lang=ru_RU"></script>
    <script src="js/main.js"></script>
 </body>
 </html>

@@ -316,13 +316,14 @@ template {
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 @font-face {
   font-family: 'Futura Medium';
   src: url("../fonts/futura/FuturaMediumC.woff") format("woff"), url("../fonts/futura/FuturaMediumC.woff2") format("woff2");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -418,6 +419,15 @@ body {
   display: none;
   text-indent: -9999px;
   background: url("../img/icon_top.png") no-repeat; }
+
+.need-heading {
+  padding: 0;
+  margin: 0;
+  display: none; }
+
+.phone-numb {
+  text-decoration: none;
+  color: #E3B873; }
 
 .container {
   width: 85%;
@@ -859,7 +869,8 @@ body {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  hidden: true; }
   .modal--visible {
     opacity: 1;
     visibility: visible; }
@@ -977,12 +988,19 @@ body {
 .swiper-scrollbar {
   background: none; }
 
+#map {
+  width: 100%;
+  min-height: 465px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  margin: auto;
+  margin-bottom: 4.714rem; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
-  .footer__map {
-    margin: auto;
-    margin-bottom: 4.714rem; }
   .footer__heading {
     margin: auto;
     max-width: 38rem;
@@ -1047,11 +1065,11 @@ body {
 
 @media screen and (max-width: 1525px) {
   .row {
-    padding: 0px 3.5rem; } }
+    padding: 0px 3rem; } }
 
 @media screen and (max-width: 1285px) {
   .row {
-    padding: 0px 1rem; }
+    padding: 0px 0.5rem; }
   .nav__item {
     margin-right: 0.9rem; } }
 
@@ -1059,9 +1077,47 @@ body {
   .row {
     padding: 0px 0.5rem; }
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .card__image {
+    max-weight: 29.78rem;
+    max-height: 28rem;
+    min-height: 19rem; } }
 
 @media screen and (max-width: 1192px) {
+  .section-dark {
+    display: none; }
+  .section-title {
+    padding: 60px 0; }
+    .section-title__repair {
+      padding: 0;
+      padding-bottom: 2rem; }
+    .section-title__design {
+      padding: 60px 0px 0px 0px; }
+    .section-title--left {
+      padding: 0;
+      padding-top: 2rem; }
+  .design-project {
+    background: linear-gradient(to top, #131313 50%, #131313 50%); }
+  .repair {
+    background-color: #fff; }
+  .design-project__heading {
+    color: #fff; }
+  .card__text {
+    margin: 0 auto;
+    margin-top: -9.3rem;
+    margin-bottom: 5.714rem; }
+  .col__img {
+    margin-top: 2rem;
+    max-weight: 29.78rem;
+    max-height: 31.57rem; }
+  .card__image {
+    max-weight: 29.78rem;
+    max-height: 28rem;
+    min-height: 19rem; }
+  .control__title {
+    padding: 2.5rem; } }
+
+@media screen and (max-width: 992px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -1079,6 +1135,8 @@ body {
     background-color: #fff; }
   .design-project__heading {
     color: #fff; }
+  .card__image {
+    max-width: 320px; }
   .card__text {
     margin: 0 auto;
     margin-top: -9.3rem;
@@ -1088,15 +1146,9 @@ body {
     max-weight: 340px;
     max-height: 202px; }
   .control__title {
-    padding: 2.5rem; } }
-
-@media screen and (max-width: 992px) {
-  .card__image {
-    max-width: 320px; }
-  .card__text {
-    margin: 0;
-    margin-top: -9.3rem;
-    margin-bottom: 5.714rem; }
+    padding: 2.5rem; }
+  .button--primary:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
   .nav {
     display: none; }
   .hero__instagram {
@@ -1176,6 +1228,7 @@ body {
       display: flex;
       flex-direction: column; }
     .footer__map {
+      height: 255px;
       max-width: 100%;
       margin-bottom: 3rem;
       order: 1; }
@@ -1273,7 +1326,10 @@ body {
       background-image: 138.6%; }
     .swiper-slide__value {
       font-size: 1rem;
-      line-height: 158.48%; } }
+      line-height: 158.48%; }
+  #map {
+    min-height: 255px;
+    min-width: 340px; } }
 
 @media screen and (max-height: 550px) {
   .hero__scroll-down {
